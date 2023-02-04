@@ -113,11 +113,23 @@ width:100%;
 }
 
 /*button:*/
-.speaker-btn{
+.speaker-btn, .dic-btn{
 border-radius:50%;
 border:none;
 background-color:transparent;
 padding:1px 2px 5px 10px;
+}
+
+/*div:*/
+.dic-m{
+direction:ltr;
+background-color:#009B68;
+color:#f3eced;
+border-radius:10px 10px 10px 2px;
+padding:10px 5px 5px 5px;
+margin-bottom:4px;
+display:none;
+opacity:0.9;
 }
 
 /*img:*/
@@ -132,6 +144,14 @@ position:relative;
 top:6px;
 right:5px;
 }
+
+.dictionary{
+padding:1px;
+width:14px;
+position:relative;
+top:3.5px;
+}
+
 
 .impo{
 width:15px;
@@ -549,8 +569,13 @@ Idioms
 <td class="items ar-i">
 كن صادقًا وصريحًا
 </td>
-<td class="items en-i"><button onclick="rt1.play()" class="speaker-btn"><img src="https://alsaha-alelmiya.github.io/Hosting/Speaker3.svg" alt="🔊" class="speaker"></button>
+<td class="items en-i">
+<div class="dic-m" id="dic-m1">Be straight = be honest and frank.</div>
+<button onclick="rt1.play()" class="speaker-btn"><img src="https://alsaha-alelmiya.github.io/Hosting/Speaker3.svg" alt="🔊" class="speaker"></button>
 Be straight
+<button class="dic-btn" id="dic-btn1">
+<img src="https://alsaha-alelmiya.github.io/Hosting/dictionary3.svg" alt="📖" class="dictionary">
+</button>
 </td>
 <td class="items ar-i">
 كن على الطريق
@@ -564,8 +589,13 @@ Be on the road
 <td class="items ar-i">
 تخييب أمل شخص ما
 </td>
-<td class="items en-i"><button onclick="rt2.play()" class="speaker-btn"><img src="https://alsaha-alelmiya.github.io/Hosting/Speaker3.svg" alt="🔊" class="speaker"></button>
+<td class="items en-i">
+<div class="dic-m" id="dic-m2">Let someone down = disappoint.</div>
+<button onclick="rt2.play()" class="speaker-btn"><img src="https://alsaha-alelmiya.github.io/Hosting/Speaker3.svg" alt="🔊" class="speaker"></button>
 Let someone down
+<button class="dic-btn" id="dic-btn2">
+<img src="https://alsaha-alelmiya.github.io/Hosting/dictionary3.svg" alt="📖" class="dictionary">
+</button>
 </td>
 <td class="items ar-i">
 اعتاد على
@@ -579,8 +609,13 @@ Get used to
 <td class="items ar-i">
 يُستخدَم لتقول أنك لن تسمح بشيء ما
 </td>
-<td class="items en-i"><button onclick="rt3.play()" class="speaker-btn"><img src="https://alsaha-alelmiya.github.io/Hosting/Speaker3.svg" alt="🔊" class="speaker"></button>
+<td class="items en-i">
+<div class="dic-m" id="dic-m3">No way = used to say you won't allow something.</div>
+<button onclick="rt3.play()" class="speaker-btn"><img src="https://alsaha-alelmiya.github.io/Hosting/Speaker3.svg" alt="🔊" class="speaker"></button>
 No way
+<button class="dic-btn" id="dic-btn3">
+<img src="https://alsaha-alelmiya.github.io/Hosting/dictionary3.svg" alt="📖" class="dictionary">
+</button>
 </td>
 <td class="items ar-i">
 يتطلع إلى
@@ -594,8 +629,13 @@ Look forward to
 <td class="items ar-i">
 يُستخدَم لمنح شخص ما الإذن أو التشجيع
 </td>
-<td class="items en-i"><button onclick="rt4.play()" class="speaker-btn"><img src="https://alsaha-alelmiya.github.io/Hosting/Speaker3.svg" alt="🔊" class="speaker"></button>
+<td class="items en-i">
+<div class="dic-m" id="dic-m4">Of course = used to give someone permission or encouragement.</div>
+<button onclick="rt4.play()" class="speaker-btn"><img src="https://alsaha-alelmiya.github.io/Hosting/Speaker3.svg" alt="🔊" class="speaker"></button>
 Of course
+<button class="dic-btn" id="dic-btn4">
+<img src="https://alsaha-alelmiya.github.io/Hosting/dictionary3.svg" alt="📖" class="dictionary">
+</button>
 </td>
 <td class="items ar-i">
 يوقف التفكير
@@ -656,6 +696,7 @@ Take advantage of
 <span class="d-date">1444 - 2023</span>
 </p>
 </footer>
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 <script src="https://alsaha-alelmiya.github.io/Hosting/voices3.js"></script>
 <script>
 function openMenu(){
@@ -677,5 +718,6 @@ document.getElementById("menu-box").style.width = "0";
 document.getElementById("m-img").style.display ="block";
 }
 </script>
+<script src="https://alsaha-alelmiya.github.io/Hosting/dic-sup.js"></script>
 </body>
 </html>

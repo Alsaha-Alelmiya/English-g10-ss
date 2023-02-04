@@ -113,11 +113,23 @@ width:100%;
 }
 
 /*button:*/
-.speaker-btn{
+.speaker-btn, .dic-btn{
 border-radius:50%;
 border:none;
 background-color:transparent;
 padding:1px 2px 5px 10px;
+}
+
+/*div:*/
+.dic-m{
+direction:ltr;
+background-color:#4682B4;
+color:#f3eced;
+border-radius:10px 10px 10px 2px;
+padding:10px 5px 5px 5px;
+margin-bottom:4px;
+display:none;
+opacity:0.9;
 }
 
 /*img:*/
@@ -131,6 +143,13 @@ width:18px;
 position:relative;
 top:6px;
 right:5px;
+}
+
+.dictionary{
+padding:1px;
+width:14px;
+position:relative;
+top:3.5px;
 }
 
 .impo{
@@ -502,25 +521,34 @@ Should
 Well-being
 </td>
 <td class="s-titles ar-st">
+<img src="https://good-web-dev.github.io/hosting/Important2.svg" alt="" class="impo">
 أفعال مركبة من كلمتين
 </td>
 <td class="s-titles en-st">
 Two-word verbs
+<img src="https://good-web-dev.github.io/hosting/Important2.svg" alt="" class="impo">
 </td>
 </tr>
 
 <tr>
 <td class="s-titles ar-st">
+<img src="https://good-web-dev.github.io/hosting/Important2.svg" alt="" class="impo">
 أفعال مركبة من ثلاث كلمات
 </td>
 <td class="s-titles en-st">
 Three-word verbs
+<img src="https://good-web-dev.github.io/hosting/Important2.svg" alt="" class="impo">
 </td>
 <td class="items ar-i">
 يتوقف عن فعل
 </td>
-<td class="items en-i"><button onclick="$2wv1.play()" class="speaker-btn"><img src="https://good-web-dev.github.io/hosting/Speaker2.svg" alt="🔊" class="speaker"></button>
+<td class="items en-i">
+<div class="dic-m" id="dic-m1">Give up = stop doing.</div>
+<button onclick="$2wv1.play()" class="speaker-btn"><img src="https://good-web-dev.github.io/hosting/Speaker2.svg" alt="🔊" class="speaker"></button>
 Give up
+<button class="dic-btn" id="dic-btn1">
+<img src="https://alsaha-alelmiya.github.io/Hosting/dictionary2.svg" alt="📖" class="dictionary">
+</button>
 </td>
 </tr>
 
@@ -528,14 +556,24 @@ Give up
 <td class="items ar-i">
 يقلل الاستهلاك
 </td>
-<td class="items en-i"><button onclick="$3wv1.play()" class="speaker-btn"><img src="https://good-web-dev.github.io/hosting/Speaker2.svg" alt="🔊" class="speaker"></button>
+<td class="items en-i">
+<div class="dic-m" id="dic-m2">Cut down on = to reduce an amount of something.</div>
+<button onclick="$3wv1.play()" class="speaker-btn"><img src="https://good-web-dev.github.io/hosting/Speaker2.svg" alt="🔊" class="speaker"></button>
 Cut down on
+<button class="dic-btn" id="dic-btn2">
+<img src="https://alsaha-alelmiya.github.io/Hosting/dictionary2.svg" alt="📖" class="dictionary">
+</button>
 </td>
 <td class="items ar-i">
 يؤجل
 </td>
-<td class="items en-i"><button onclick="$2wv2.play()" class="speaker-btn"><img src="https://good-web-dev.github.io/hosting/Speaker2.svg" alt="🔊" class="speaker"></button>
+<td class="items en-i">
+<div class="dic-m" id="dic-m3">Put off = postpone.</div>
+<button onclick="$2wv2.play()" class="speaker-btn"><img src="https://good-web-dev.github.io/hosting/Speaker2.svg" alt="🔊" class="speaker"></button>
 Put off
+<button class="dic-btn" id="dic-btn3">
+<img src="https://alsaha-alelmiya.github.io/Hosting/dictionary2.svg" alt="📖" class="dictionary">
+</button>
 </td>
 </tr>
 
@@ -543,14 +581,24 @@ Put off
 <td class="items ar-i">
 ينسجم - يتقرب
 </td>
-<td class="items en-i"><button onclick="$3wv2.play()" class="speaker-btn"><img src="https://good-web-dev.github.io/hosting/Speaker2.svg" alt="🔊" class="speaker"></button>
+<td class="items en-i">
+<div class="dic-m" id="dic-m4">Get along with = be friendly.</div>
+<button onclick="$3wv2.play()" class="speaker-btn"><img src="https://good-web-dev.github.io/hosting/Speaker2.svg" alt="🔊" class="speaker"></button>
 Get along with
+<button class="dic-btn" id="dic-btn4">
+<img src="https://alsaha-alelmiya.github.io/Hosting/dictionary2.svg" alt="📖" class="dictionary">
+</button>
 </td>
 <td class="items ar-i">
 يبدأ
 </td>
-<td class="items en-i"><button onclick="$2wv3.play()" class="speaker-btn"><img src="https://good-web-dev.github.io/hosting/Speaker2.svg" alt="🔊" class="speaker"></button>
+<td class="items en-i">
+<div class="dic-m" id="dic-m5">Take up = begin.</div>
+<button onclick="$2wv3.play()" class="speaker-btn"><img src="https://good-web-dev.github.io/hosting/Speaker2.svg" alt="🔊" class="speaker"></button>
 Take up
+<button class="dic-btn" id="dic-btn5">
+<img src="https://alsaha-alelmiya.github.io/Hosting/dictionary2.svg" alt="📖" class="dictionary">
+</button>
 </td>
 </tr>
 
@@ -558,14 +606,24 @@ Take up
 <td class="items ar-i">
 يتقبل (شيء غير سار)
 </td>
-<td class="items en-i"><button onclick="$3wv3.play()" class="speaker-btn"><img src="https://good-web-dev.github.io/hosting/Speaker2.svg" alt="🔊" class="speaker"></button>
+<td class="items en-i">
+<div class="dic-m" id="dic-m6">Put up with = accept a bad situation.</div>
+<button onclick="$3wv3.play()" class="speaker-btn"><img src="https://good-web-dev.github.io/hosting/Speaker2.svg" alt="🔊" class="speaker"></button>
 Put up with
+<button class="dic-btn" id="dic-btn6">
+<img src="https://alsaha-alelmiya.github.io/Hosting/dictionary2.svg" alt="📖" class="dictionary">
+</button>
 </td>
 <td class="items ar-i">
 يتخلص
 </td>
-<td class="items en-i"><button onclick="$2wv4.play()" class="speaker-btn"><img src="https://good-web-dev.github.io/hosting/Speaker2.svg" alt="🔊" class="speaker"></button>
+<td class="items en-i">
+<div class="dic-m" id="dic-m7">Throw away = discard.</div>
+<button onclick="$2wv4.play()" class="speaker-btn"><img src="https://good-web-dev.github.io/hosting/Speaker2.svg" alt="🔊" class="speaker"></button>
 Throw away
+<button class="dic-btn" id="dic-btn7">
+<img src="https://alsaha-alelmiya.github.io/Hosting/dictionary2.svg" alt="📖" class="dictionary">
+</button>
 </td>
 </tr>
 
@@ -579,8 +637,13 @@ Adjectives
 <td class="items ar-i">
 يرفض
 </td>
-<td class="items en-i"><button onclick="$2wv5.play()" class="speaker-btn"><img src="https://good-web-dev.github.io/hosting/Speaker2.svg" alt="🔊" class="speaker"></button>
+<td class="items en-i">
+<div class="dic-m" id="dic-m8">Turn down = refuse.</div>
+<button onclick="$2wv5.play()" class="speaker-btn"><img src="https://good-web-dev.github.io/hosting/Speaker2.svg" alt="🔊" class="speaker"></button>
 Turn down
+<button class="dic-btn" id="dic-btn8">
+<img src="https://alsaha-alelmiya.github.io/Hosting/dictionary2.svg" alt="📖" class="dictionary">
+</button>
 </td>
 </tr>
 
@@ -623,8 +686,13 @@ Depressed
 <td class="items ar-i">
 الشعور بالاكتئاب
 </td>
-<td class="items en-i"><button onclick="rt1.play()" class="speaker-btn"><img src="https://good-web-dev.github.io/hosting/Speaker2.svg" alt="🔊" class="speaker"></button>
+<td class="items en-i">
+<div class="dic-m" id="dic-m9">Feeling down = feeling depressed.</div>
+<button onclick="rt1.play()" class="speaker-btn"><img src="https://good-web-dev.github.io/hosting/Speaker2.svg" alt="🔊" class="speaker"></button>
 Feeling down
+<button class="dic-btn" id="dic-btn9">
+<img src="https://alsaha-alelmiya.github.io/Hosting/dictionary2.svg" alt="📖" class="dictionary">
+</button>
 </td>
 </tr>
 
@@ -638,8 +706,13 @@ illegal
 <td class="items ar-i">
 تفكر في نفسك فقط ولا تهتم للآخرين (أناني)
 </td>
-<td class="items en-i"><button onclick="rt2.play()" class="speaker-btn"><img src="https://good-web-dev.github.io/hosting/Speaker2.svg" alt="🔊" class="speaker"></button>
+<td class="items en-i">
+<div class="dic-m" id="dic-m10">Look out for myself = look out for yourself and not care about other people.</div>
+<button onclick="rt2.play()" class="speaker-btn"><img src="https://good-web-dev.github.io/hosting/Speaker2.svg" alt="🔊" class="speaker"></button>
 Look out for myself
+<button class="dic-btn" id="dic-btn10">
+<img src="https://alsaha-alelmiya.github.io/Hosting/dictionary2.svg" alt="📖" class="dictionary">
+</button>
 </td>
 </tr>
 
@@ -653,8 +726,13 @@ Lean
 <td class="items ar-i">
 تعبير يستخدم لجعل العبارة أقوى
 </td>
-<td class="items en-i"><button onclick="rt3.play()" class="speaker-btn"><img src="https://good-web-dev.github.io/hosting/Speaker2.svg" alt="🔊" class="speaker"></button>
+<td class="items en-i">
+<div class="dic-m" id="dic-m11">To be honset = an expression used to make a statement stronger.</div>
+<button onclick="rt3.play()" class="speaker-btn"><img src="https://good-web-dev.github.io/hosting/Speaker2.svg" alt="🔊" class="speaker"></button>
 To be honest
+<button class="dic-btn" id="dic-btn11">
+<img src="https://alsaha-alelmiya.github.io/Hosting/dictionary2.svg" alt="📖" class="dictionary">
+</button>
 </td>
 </tr>
 
@@ -695,9 +773,9 @@ Slim
 <span class="d-date">1444 - 2023</span>
 </p>
 </footer>
-<script src="https://good-web-dev.github.io/hosting/voices2.js"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script src="https://alsaha-alelmiya.github.io/Hosting/voices2.js"></script>
 <script>
-
 function openMenu(){
 document.getElementById("m-img").style.animation ="m-img 0.9s";
 
@@ -717,5 +795,6 @@ document.getElementById("menu-box").style.width = "0";
 document.getElementById("m-img").style.display ="block";
 }
 </script>
+<script src="https://alsaha-alelmiya.github.io/Hosting/dic-sup.js"></script>
 </body>
 </html>

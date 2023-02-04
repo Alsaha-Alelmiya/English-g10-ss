@@ -82,14 +82,15 @@ text-shadow:1px 1px 3px #4D6F79, 1px 1px 3px #4D6F79;
 }
 
 .hint{
-background-color:#f0dc82;
+background-color:#FCE0A2;
 width:70%;
 padding:10px 0px;
-color:darkslategray;
+color:#40586e;
 margin:-10px auto;
 font-family:markazi text;
 font-size:22px;
 border-radius:30px 10px 30px 10px;
+box-shadow:1px 1px 3px black;
 }
 
 .d-a{
@@ -156,7 +157,7 @@ background-color:#4D6F79;
 color:#f3eced;
 width:55%;
 float:left;
-margin:50px 5px;
+margin:100px 5px 5px 5px;
 border-radius:5px 30px 30px 30px;
 box-shadow:2px 2px 5px black;
 }
@@ -166,6 +167,34 @@ display:grid;
 grid-template-columns:1fr 1fr;
 grid-gap:30px;
 margin:60px 15px;
+}
+
+.trans-div{
+border:5px double #4D6F79;
+background-color:#f3eced;
+box-shadow:2px 2px 5px;
+border-radius:10px 50px 10px 50px;
+width:90%;
+margin:auto;
+}
+
+.impo-n{
+background-color:rgb(178,34,34,0.75);
+margin:-30px auto 100px auto;
+width:95%;
+font-size:18px;
+border-radius:5px;
+font-family:IBM PLEX SANS ARABIC;
+padding:5px 10px 50px 10px;
+color:#f3eced;
+text-shadow:1px 1px 3px black;
+box-shadow:1px 3px 5px black;
+}
+
+/*img:*/
+.impo-img{
+width:50px;
+display:block;
 }
 
 /*button:*/
@@ -241,13 +270,22 @@ padding-right:3px;
 </p>
 </div>
 
-<p class="hint">اضغط على الزر للانتقال إلى الوحدة المطلوبة</p>
+<div class="impo-n">
+<img src="https://alsaha-alelmiya.github.io/Hosting/Important.svg" alt="" class="impo-img">
+تنويه!
+<br>
+قد لا يدعم تصميم الصفحات الإلكترونية بعض الشاشات.
+</div>
+
+<div class="trans-div">
+<p class="hint">اضغط على الأزرار للانتقال إلى الوحدة المطلوبة</p>
 
 <div class="btns-div">
 <button class="btn1 btns" id="btn1" onclick="document.location.href='V-E1.html'">الوحدة الأولى</button>
 <button class="btn2 btns" id="btn2" onclick="document.location.href='V-E2.html'">الوحدة الثانية</button>
 <button class="btn3 btns" id="btn3" onclick="document.location.href='V-E3.html'">الوحدة الثالثة</button>
 <button class="btn4 btns" id="btn4" onclick="document.location.href='V-E4.html'">الوحدة الرابعة</button>
+</div>
 </div>
 
 <div class="t-d-q">
@@ -258,10 +296,10 @@ padding-right:3px;
 
 <div class="t-d-a">
 <p class="t-a">
-هي الاسم للفريق التطوعي المكون من ١١ عضوًا، يهدف كل واحد منهم إلى خدمة المجتمع من ناحية المجال العلمي والثقافي، وقد تم تأسيس الفريق بتاريخ ٢٣ / ٦ / ١٤٤٤ھ
+هي اسم الفريق التطوعي الذي يتكون من ١٢ عضوًا، يهدف كل واحد منهم إلى خدمة المجتمع من ناحية المجال العلمي والثقافي، وقد تم تأسيس الفريق بتاريخ ٢٣ / ٦ / ١٤٤٤ھ
 </p>
 </div>
-<br><br><br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br>
 <footer class="footer">
 <p class="d-footer">
 عمل فريق الساحة العلمية التطوعي

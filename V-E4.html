@@ -113,11 +113,23 @@ width:100%;
 }
 
 /*button:*/
-.speaker-btn{
+.speaker-btn, .dic-btn{
 border-radius:50%;
 border:none;
 background-color:transparent;
 padding:1px 2px 5px 10px;
+}
+
+/*div:*/
+.dic-m{
+direction:ltr;
+background-color:#008080;
+color:#f3eced;
+border-radius:10px 10px 10px 2px;
+padding:10px 5px 5px 5px;
+margin-bottom:4px;
+display:none;
+opacity:0.9;
 }
 
 /*img:*/
@@ -132,6 +144,14 @@ position:relative;
 top:6px;
 right:5px;
 }
+
+.dictionary{
+padding:1px;
+width:14px;
+position:relative;
+top:3.5px;
+}
+
 
 .impo{
 width:15px;
@@ -531,8 +551,13 @@ Quiz show
 <td class="items ar-i">
 استمتع بوقتك
 </td>
-<td class="items en-i"><button onclick="rt1.play()" class="speaker-btn"><img src="https://alsaha-alelmiya.github.io/Hosting/Speaker4.svg" alt="🔊" class="speaker"></button>
+<td class="items en-i">
+<div class="dic-m" id="dic-m1">Have a ball = have a good time.</div>
+<button onclick="rt1.play()" class="speaker-btn"><img src="https://alsaha-alelmiya.github.io/Hosting/Speaker4.svg" alt="🔊" class="speaker"></button>
 Have a ball
+<button class="dic-btn" id="dic-btn1">
+<img src="https://alsaha-alelmiya.github.io/Hosting/dictionary4.svg" alt="📖" class="dictionary">
+</button>
 </td>
 </tr>
 
@@ -546,8 +571,13 @@ Stock market
 <td class="items ar-i">
 هذا الشخص
 </td>
-<td class="items en-i"><button onclick="rt2.play()" class="speaker-btn"><img src="https://alsaha-alelmiya.github.io/Hosting/Speaker4.svg" alt="🔊" class="speaker"></button>
+<td class="items en-i">
+<div class="dic-m" id="dic-m2">This guy = informal way to say “this person”.</div>
+<button onclick="rt2.play()" class="speaker-btn"><img src="https://alsaha-alelmiya.github.io/Hosting/Speaker4.svg" alt="🔊" class="speaker"></button>
 This guy
+<button class="dic-btn" id="dic-btn2">
+<img src="https://alsaha-alelmiya.github.io/Hosting/dictionary4.svg" alt="📖" class="dictionary">
+</button>
 </td>
 </tr>
 
@@ -561,8 +591,13 @@ Technology
 <td class="items ar-i">
 في رأيي
 </td>
-<td class="items en-i"><button onclick="rt3.play()" class="speaker-btn"><img src="https://alsaha-alelmiya.github.io/Hosting/Speaker4.svg" alt="🔊" class="speaker"></button>
+<td class="items en-i">
+<div class="dic-m" id="dic-m3">To me = in my opinion.</div>
+<button onclick="rt3.play()" class="speaker-btn"><img src="https://alsaha-alelmiya.github.io/Hosting/Speaker4.svg" alt="🔊" class="speaker"></button>
 To me
+<button class="dic-btn" id="dic-btn3">
+<img src="https://alsaha-alelmiya.github.io/Hosting/dictionary4.svg" alt="📖" class="dictionary">
+</button>
 </td>
 </tr>
 
@@ -576,8 +611,13 @@ Universe
 <td class="items ar-i">
 يُستخدَم لتأكيد ما قد قيل
 </td>
-<td class="items en-i"><button onclick="rt4.play()" class="speaker-btn"><img src="https://alsaha-alelmiya.github.io/Hosting/Speaker4.svg" alt="🔊" class="speaker"></button>
+<td class="items en-i">
+<div class="dic-m" id="dic-m4">You wouldn't know = echo question, to confirm what was said or to show disbelief.</div>
+<button onclick="rt4.play()" class="speaker-btn"><img src="https://alsaha-alelmiya.github.io/Hosting/Speaker4.svg" alt="🔊" class="speaker"></button>
 You wouldn't know
+<button class="dic-btn" id="dic-btn4">
+<img src="https://alsaha-alelmiya.github.io/Hosting/dictionary4.svg" alt="📖" class="dictionary">
+</button>
 </td>
 </tr>
 
@@ -616,7 +656,8 @@ Keep in touch
 <span class="d-date">1444 - 2023</span>
 </p>
 </footer>
-<script src="voices4.js"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script src="https://alsaha-alelmiya.github.io/Hosting/voices4.js"></script>
 <script>
 function openMenu(){
 document.getElementById("m-img").style.animation ="m-img 0.9s";
@@ -637,5 +678,6 @@ document.getElementById("menu-box").style.width = "0";
 document.getElementById("m-img").style.display ="block";
 }
 </script>
+<script src="https://alsaha-alelmiya.github.io/Hosting/dic-sup.js"></script>
 </body>
 </html>

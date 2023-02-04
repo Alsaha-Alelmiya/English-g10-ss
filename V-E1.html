@@ -98,7 +98,6 @@ border-left:5px solid white;
 table, th, td{
 border-collapse:collapse;
 padding:10px;
-width:;
 }
 
 img, footer, br{
@@ -113,11 +112,23 @@ width:100%;
 }
 
 /*button:*/
-.speaker-btn{
+.speaker-btn, .dic-btn{
 border-radius:50%;
 border:none;
 background-color:transparent;
 padding:1px 2px 5px 10px;
+}
+
+/*div:*/
+.dic-m{
+direction:ltr;
+background-color:#4b73e1;
+color:#f3eced;
+border-radius:10px 10px 10px 2px;
+padding:10px 5px 5px 5px;
+margin-bottom:4px;
+display:none;
+opacity:0.9;
 }
 
 /*img:*/
@@ -131,6 +142,13 @@ width:18px;
 position:relative;
 top:6px;
 right:5px;
+}
+
+.dictionary{
+padding:1px;
+width:14px;
+position:relative;
+top:3.5px;
 }
 
 .impo{
@@ -332,8 +350,13 @@ Quick check
 <td class="items ar-i">
 عدم امتلاك شعر في الرأس
 </td>
-<td class="items en-i"><button onclick="ar1.play()" class="speaker-btn"><img src="https://alsaha-alelmiya.github.io/Hosting/Speaker1.svg" alt="🔊" class="speaker"></button>
+<td class="items en-i">
+<div class="dic-m" id="dic-m1">Bald = having no hair on the head.</div>
+<button onclick="ar1.play()" class="speaker-btn"><img src="https://alsaha-alelmiya.github.io/Hosting/Speaker1.svg" alt="🔊" class="speaker"></button>
 Bald
+<button class="dic-btn" id="dic-btn1">
+<img src="https://alsaha-alelmiya.github.io/Hosting/dictionary1.svg" alt="📖" class="dictionary">
+</button>
 </td>
 <td class="items ar-i" colspan="4">
 المفردات المطلوبة موجودة في قسم
@@ -345,8 +368,13 @@ Bald
 <td class="items ar-i">
 للتنافس أو للتحارب
 </td>
-<td class="items en-i"><button onclick="ar2.play()" class="speaker-btn"><img src="https://alsaha-alelmiya.github.io/Hosting/Speaker1.svg" alt="🔊" class="speaker"></button>
+<td class="items en-i">
+<div class="dic-m" id="dic-m2">To challenge = to contest or fight against.</div>
+<button onclick="ar2.play()" class="speaker-btn"><img src="https://alsaha-alelmiya.github.io/Hosting/Speaker1.svg" alt="🔊" class="speaker"></button>
 To challenge
+<button class="dic-btn" id="dic-btn2">
+<img src="https://alsaha-alelmiya.github.io/Hosting/dictionary1.svg" alt="📖" class="dictionary">
+</button>
 </td>
 <td class="s-titles ar-st">
 أسماء
@@ -360,8 +388,13 @@ Nouns
 <td class="items ar-i">
 للتحرك عبر شيء عن طريق الدوران والتجنب
 </td>
-<td class="items en-i"><button onclick="ar3.play()" class="speaker-btn"><img src="https://alsaha-alelmiya.github.io/Hosting/Speaker1.svg" alt="🔊" class="speaker"></button>
+<td class="items en-i">
+<div class="dic-m" id="dic-m3">To weave through = to move through something by turning and avoiding.</div>
+<button onclick="ar3.play()" class="speaker-btn"><img src="https://alsaha-alelmiya.github.io/Hosting/Speaker1.svg" alt="🔊" class="speaker"></button>
 To weave through
+<button class="dic-btn" id="dic-btn3">
+<img src="https://alsaha-alelmiya.github.io/Hosting/dictionary1.svg" alt="📖" class="dictionary">
+</button>
 </td>
 <td class="items ar-i">
 شارة
@@ -375,8 +408,13 @@ Badge
 <td class="items ar-i">
 للرمي بقوة كبيرة
 </td>
-<td class="items en-i"><button onclick="ar4.play()" class="speaker-btn"><img src="https://alsaha-alelmiya.github.io/Hosting/Speaker1.svg" alt="🔊" class="speaker"></button>
+<td class="items en-i">
+<div class="dic-m" id="dic-m4">To hurl = to throw with great force.</div>
+<button onclick="ar4.play()" class="speaker-btn"><img src="https://alsaha-alelmiya.github.io/Hosting/Speaker1.svg" alt="🔊" class="speaker"></button>
 To hurl
+<button class="dic-btn" id="dic-btn4">
+<img src="https://alsaha-alelmiya.github.io/Hosting/dictionary1.svg" alt="📖" class="dictionary">
+</button>
 </td>
 <td class="items ar-i">
 معدات
@@ -390,8 +428,13 @@ Equipment
 <td class="items ar-i">
 للانفجار
 </td>
-<td class="items en-i"><button onclick="ar5.play()" class="speaker-btn"><img src="https://alsaha-alelmiya.github.io/Hosting/Speaker1.svg" alt="🔊" class="speaker"></button>
+<td class="items en-i">
+<div class="dic-m" id="dic-m5">To burst = to explode.</div>
+<button onclick="ar5.play()" class="speaker-btn"><img src="https://alsaha-alelmiya.github.io/Hosting/Speaker1.svg" alt="🔊" class="speaker"></button>
 To burst
+<button class="dic-btn" id="dic-btn5">
+<img src="https://alsaha-alelmiya.github.io/Hosting/dictionary1.svg" alt="📖" class="dictionary">
+</button>
 </td>
 <td class="items ar-i">
 ضباب
@@ -405,8 +448,13 @@ Fog
 <td class="items ar-i">
 للتماثل للشفاء
 </td>
-<td class="items en-i"><button onclick="ar6.play()" class="speaker-btn"><img src="https://alsaha-alelmiya.github.io/Hosting/Speaker1.svg" alt="🔊" class="speaker"></button>
+<td class="items en-i">
+<div class="dic-m" id="dic-m6">To recover = to get better.</div>
+<button onclick="ar6.play()" class="speaker-btn"><img src="https://alsaha-alelmiya.github.io/Hosting/Speaker1.svg" alt="🔊" class="speaker"></button>
 To recover
+<button class="dic-btn" id="dic-btn6">
+<img src="https://alsaha-alelmiya.github.io/Hosting/dictionary1.svg" alt="📖" class="dictionary">
+</button>
 </td>
 <td class="items ar-i">
 خوذة
@@ -840,8 +888,13 @@ Real talk
 <td class="items ar-i">
 تعبير يظهر أنك لست متأكدًا تمامًا من حالة ما
 </td>
-<td class="items en-i"><button onclick="rt1.play()" class="speaker-btn"><img src="https://alsaha-alelmiya.github.io/Hosting/Speaker1.svg" alt="🔊" class="speaker"></button>
+<td class="items en-i">
+<div class="dic-m" id="dic-m7">I guess = expression to show that you're not totally sure about a statement.</div>
+<button onclick="rt1.play()" class="speaker-btn"><img src="https://alsaha-alelmiya.github.io/Hosting/Speaker1.svg" alt="🔊" class="speaker"></button>
 I guess
+<button class="dic-btn" id="dic-btn7">
+<img src="https://alsaha-alelmiya.github.io/Hosting/dictionary1.svg" alt="📖" class="dictionary">
+</button>
 </td>
 </tr>
 </tr>
@@ -851,8 +904,13 @@ I guess
 <td class="items ar-i">
 يوم الحظ السعيد
 </td>
-<td class="items en-i"><button onclick="rt2.play()" class="speaker-btn"><img src="https://alsaha-alelmiya.github.io/Hosting/Speaker1.svg" alt="🔊" class="speaker"></button>
+<td class="items en-i">
+<div class="dic-m" id="dic-m8">Lucky day= a day of good fortune.</div>
+<button onclick="rt2.play()" class="speaker-btn"><img src="https://alsaha-alelmiya.github.io/Hosting/Speaker1.svg" alt="🔊" class="speaker"></button>
 Lucky day
+<button class="dic-btn" id="dic-btn8">
+<img src="https://alsaha-alelmiya.github.io/Hosting/dictionary1.svg" alt="📖" class="dictionary">
+</button>
 </td>
 </tr>
 
@@ -861,8 +919,13 @@ Lucky day
 <td class="items ar-i">
 عالق في شيء، ولا يستطيع التحرك
 </td>
-<td class="items en-i"><button onclick="rt3.play()" class="speaker-btn"><img src="https://alsaha-alelmiya.github.io/Hosting/Speaker1.svg" alt="🔊" class="speaker"></button>
+<td class="items en-i">
+<div class="dic-m" id="dic-m9">Stuck in = caught and unable to move out.</div>
+<button onclick="rt3.play()" class="speaker-btn"><img src="https://alsaha-alelmiya.github.io/Hosting/Speaker1.svg" alt="🔊" class="speaker"></button>
 Stuck in
+<button class="dic-btn" id="dic-btn9">
+<img src="https://alsaha-alelmiya.github.io/Hosting/dictionary1.svg" alt="📖" class="dictionary">
+</button>
 </td>
 </tr>
 
@@ -871,8 +934,13 @@ Stuck in
 <td class="items ar-i">
 هناك طريقة مختلفة للتفكير في أمر ما
 </td>
-<td class="items en-i"><button onclick="rt4.play()" class="speaker-btn"><img src="https://alsaha-alelmiya.github.io/Hosting/Speaker1.svg" alt="🔊" class="speaker"></button>
+<td class="items en-i">
+<div class="dic-m" id="dic-m10">Look at it this way = there's a different way to think about something.</div>
+<button onclick="rt4.play()" class="speaker-btn"><img src="https://alsaha-alelmiya.github.io/Hosting/Speaker1.svg" alt="🔊" class="speaker"></button>
 Look at it this way
+<button class="dic-btn" id="dic-btn10">
+<img src="https://alsaha-alelmiya.github.io/Hosting/dictionary1.svg" alt="📖" class="dictionary">
+</button>
 </td>
 </tr>
 </table>
@@ -885,9 +953,9 @@ Look at it this way
 <span class="d-date">1444 - 2023</span>
 </p>
 </footer>
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 <script src="https://alsaha-alelmiya.github.io/Hosting/voices1.js"></script>
 <script>
-
 function openMenu(){
 document.getElementById("m-img").style.animation ="m-img 0.9s";
 
@@ -907,5 +975,6 @@ document.getElementById("menu-box").style.width = "0";
 document.getElementById("m-img").style.display ="block";
 }
 </script>
+<script src="https://alsaha-alelmiya.github.io/Hosting/dic-sup.js"></script>
 </body>
 </html>
