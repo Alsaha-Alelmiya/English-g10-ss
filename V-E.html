@@ -189,6 +189,7 @@ padding:5px 10px 50px 10px;
 color:#f3eced;
 text-shadow:1px 1px 3px black;
 box-shadow:1px 3px 5px black;
+display:none;
 }
 
 /*img:*/
@@ -270,7 +271,12 @@ padding-right:3px;
 </p>
 </div>
 
-<!--important note was here past-->
+<div class="impo-n" id="impo-n">
+<img src="https://alsaha-alelmiya.github.io/Hosting/Important.svg" alt="" class="impo-img">
+تنويه!
+<br>
+قد لا يدعم تصميم الصفحات الإلكترونية شاشتك.
+</div>
 
 <div class="trans-div">
 <p class="hint">اضغط على الأزرار للانتقال إلى الوحدة المطلوبة</p>
@@ -303,8 +309,18 @@ padding-right:3px;
 <span class="d-date">1444 - 2023</span>
 </p>
 </footer>
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 <script>
+var impoN = document.getElementById("impo-n");
 
+if (window.matchMedia("(max-width:990px)").matches) {
+var timeout = setTimeout(function() {
+$("#impo-n").toggle('slow');
+div1.style.display = "block";
+}, 5000);
+$("#impo-n").toggle('slow');
+div1.style.display = "none";
+}
 </script>
 </body>
 </html>
